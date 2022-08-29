@@ -52,7 +52,7 @@ const generatePdf = async (req, res, next) => {
         }).catch(error => {
             console.log(error);
         });
-        const filepath = 'https://pdf-generator-pph.herokuapp.com/docs/' + filename;
+        const filepath = 'https://lionfish-app-j3n7k.ondigitalocean.app/docs/' + filename;
 
         res.render('download', {
             path: filepath
